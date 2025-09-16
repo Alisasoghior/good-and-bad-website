@@ -1,0 +1,30 @@
+.illustration {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    gap: 60px;
+    
+}
+
+.illustration img {
+    width: 400px;
+    height: auto;
+}
+
+.moving-text {
+    display: inline-block;
+    position: relative;
+    animation: floatX 1.5s ease-in-out infinite;
+
+}
+
+@keyframes floatX {
+    0%, 100% {
+        transform: translateX(-60px);
+    }
+    50% {
+        transform: translateX(60px);
+    }
+}
